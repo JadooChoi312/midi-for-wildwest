@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="snow.js"></script>
+    <title>Responsive Image Example</title>
+    <style>
+        .responsive-image {
+            width: 35%; /* or any percentage */
+            height: auto; /* maintains aspect ratio */
+        }
+        h1 {
+            color: #2D9A01; /* Neon green color */
+            font-size: 4em; /* Large font size */
+            text-align: center; /* Center the text */
+            text-shadow: 
+                0 0 5px #8BF95F, /* Small glow */
+                0 0 10px #8BF95F, /* Medium glow */
+                0 0 15px #8BF95F, /* Larger glow */
+                0 0 20px #A7FF84, /* Outer glow in pink */
+                0 0 30px #A7FF84, /* Larger outer glow */
+                0 0 40px #A7FF84; /* Even larger outer glow */
+        }
+            blockquote {
+            font-style: italic; /* Italicize the text */
+            margin: 20px; /* Add margin around the quote */
+            padding: 10px; /* Add padding inside the quote */
+            color: #92ED6E; /* Text color */
+        }
+
+        body {
+            background-color: black; /* Change this to your desired color */
+        }
+    </style>
+</head>
+<body>
+  <center><h1>Hacked By Lain Iwakura <3 </h1></center>
+  <center><img src="https://i.pinimg.com/736x/d8/bc/a3/d8bca3326922dff1f8e37f6b59c482f1.jpg" class="responsive-image" alt="reality and real life have no different."></center>
+  <center><blockquote>
+        No matter where you go, everyone's connected.
+        <footer>— Lain Iwakura</footer>
+    </center></blockquote>
+
+     <!-- Audio element -->
+    <audio id="background-music" loop>
+        <source src="https://ia801901.us.archive.org/35/items/boa_-_duvet/01.%20Duvet.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Button to play music -->
+  <center><button onclick="playBackgroundMusic()">Play Me!</button></center>
+
+  <script>
+        // Function to play background music
+        function playBackgroundMusic() {
+            const audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.log('Playback prevented:', error);
+            });
+        }
+    </script>
+
+
+  </body>
+</html>
